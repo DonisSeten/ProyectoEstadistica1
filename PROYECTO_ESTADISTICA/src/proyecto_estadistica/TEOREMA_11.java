@@ -77,6 +77,11 @@ public class TEOREMA_11 extends javax.swing.JFrame {
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton4.setText("EJEMPLOS");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 300, 120, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -133,6 +138,13 @@ MENU MN = new MENU();
         MN.setVisible(true);
         this.setVisible(false);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        ejemplo_11 MN = new ejemplo_11();
+        MN.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     
 

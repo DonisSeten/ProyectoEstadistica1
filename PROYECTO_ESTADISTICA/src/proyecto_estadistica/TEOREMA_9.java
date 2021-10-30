@@ -16,7 +16,7 @@ public class TEOREMA_9 extends javax.swing.JFrame {
      */
     public TEOREMA_9() {
         initComponents();
-     this.setLocationRelativeTo(null);/* para centrar el jframe*/
+        this.setLocationRelativeTo(null);/* para centrar el jframe*/
     }
 
     /**
@@ -45,6 +45,11 @@ public class TEOREMA_9 extends javax.swing.JFrame {
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton4.setText("EJEMPLOS");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -87,6 +92,13 @@ public class TEOREMA_9 extends javax.swing.JFrame {
         MN.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        ejemplo_9 MN = new ejemplo_9();
+        MN.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments

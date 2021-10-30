@@ -77,6 +77,11 @@ public class TEOREMA_2 extends javax.swing.JFrame {
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton4.setText("EJEMPLOS");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 270, 120, 40));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
@@ -191,6 +196,13 @@ public class TEOREMA_2 extends javax.swing.JFrame {
         MN.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        ejemplo_2 MN = new ejemplo_2();
+        MN.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -80,6 +80,11 @@ public class TEOREMA_4 extends javax.swing.JFrame {
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton4.setText("EJEMPLOS");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 300, 120, 40));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_estadistica/recursos/inicio.jpg"))); // NOI18N
@@ -154,6 +159,13 @@ public class TEOREMA_4 extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        ejemplo_4 MN = new ejemplo_4();
+        MN.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments

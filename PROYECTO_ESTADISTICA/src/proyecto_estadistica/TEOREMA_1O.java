@@ -95,6 +95,9 @@ public class TEOREMA_1O extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        ejemplo_10 MN = new ejemplo_10();
+        MN.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**

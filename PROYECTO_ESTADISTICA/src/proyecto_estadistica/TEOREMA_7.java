@@ -80,7 +80,12 @@ public class TEOREMA_7 extends javax.swing.JFrame {
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton4.setText("EJEMPLOS");
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 350, 120, 40));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 340, 120, 40));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_estadistica/recursos/LIMPIAR.jpg"))); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -96,13 +101,13 @@ public class TEOREMA_7 extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 720, 60));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_estadistica/recursos/fondo1.jpg"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 400));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 440));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 643, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 721, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -152,6 +157,13 @@ public class TEOREMA_7 extends javax.swing.JFrame {
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+                 ejemplo_7 MN = new ejemplo_7();
+        MN.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
